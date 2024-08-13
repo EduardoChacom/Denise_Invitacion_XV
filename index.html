@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
@@ -13,58 +14,75 @@
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
     </style>
 </head>
+
 <body>
     <div class="mobile-container">
-    <section class="header">
-        <img src="./img/header-image.jpg" alt="Flores" class="header-image">
-        <div class="text-overlay">
-            <div class="links">
-                <a href="#fiesta">Fiesta</a>
-                <a href="#misa">Misa</a>
+        <section class="header">
+            <img src="./img/header-image.jpg" alt="Flores" class="header-image">
+            <div class="text-overlay">
+                <div class="links">
+                    <a href="#fiesta">Fiesta</a>
+                    <a href="#misa">Misa</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about">
-        <h3>SOBRE DENISE</h3>
-        <p>Denise Angélica Briseño Aguayo, una estrella que brilla con luz propia, iluminando el camino de quienes la rodean. Su alma, pura y bella, es un jardín floreciente donde la alegría y la esperanza encuentran su hogar. Hoy celebramos este nuevo amanecer en su vida, quince años de sueños y promesas por cumplir.</p>
-    </section>
 
-    <section class="details">
-        <h3>PADRES</h3>
-        <p>Angélica Rosalía Aguayo Landín<br>Denis René Briseño Martínez</p>
-        
-        <h3>PADRINOS</h3>
-        <p>Bertha Azucena Gutiérrez Landín<br>Luis Eduardo Chacón Manzo</p>
-    </section>
+        <section class="about">
+            <h3>SOBRE DENISE</h3>
+            <p>Denise Angélica Briseño Aguayo, una estrella que brilla con luz propia, iluminando el camino de quienes
+                la rodean. Su alma, pura y bella, es un jardín floreciente donde la alegría y la esperanza encuentran su
+                hogar. Hoy celebramos este nuevo amanecer en su vida, quince años de sueños y promesas por cumplir.</p>
+        </section>
 
-    <section class="date">
-        <div class="event" id="misa">
-            <img src="./img/iglesia-image.jpg" alt="Catedral" class="event-image">
-            <div class="event-text">
-                <a href="https://maps.app.goo.gl/A7E9vcX4FukbqZnv9" target="_blank" class="visit-button"><span>Visitar</span><img src="./img/boton.jpg" alt="Google Maps"></a>
+        <section class="details">
+            <h3>PADRES</h3>
+            <p>Angélica Rosalía Aguayo Landín<br>Denis René Briseño Martínez</p>
+
+            <h3>PADRINOS</h3>
+            <p>Bertha Azucena Gutiérrez Landín<br>Luis Eduardo Chacón Manzo</p>
+        </section>
+
+
+
+        <section class="date">
+            <div class="event" id="misa">
+                <img src="./img/iglesia-image.jpg" alt="Catedral" class="event-image">
+                <div class="event-text">
+                    <a href="https://maps.app.goo.gl/A7E9vcX4FukbqZnv9" target="_blank"
+                        class="visit-button"><span>Visitar</span><img src="./img/boton.jpg" alt="Google Maps"></a>
+                </div>
             </div>
-        </div>
-        <div class="event" id="fiesta">
-            <img src="./img/party-image.jpg" alt="Fiesta" class="event-image">
-            <div class="event-text">
-                <a href="https://maps.app.goo.gl/b1z52pSQNLF8bcCRA" target="_blank" class="visit-button"><span>Visitar</span><img src="./img/boton.jpg" alt="Google Maps"></a>
+            <div class="event" id="fiesta">
+                <img src="./img/party-image.jpg" alt="Fiesta" class="event-image">
+                <div class="event-text">
+                    <a href="https://maps.app.goo.gl/b1z52pSQNLF8bcCRA" target="_blank"
+                        class="visit-button"><span>Visitar</span><img src="./img/boton.jpg" alt="Google Maps"></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="schedule">
-        <h3>CRONOGRAMA</h3>
-        <p>Misa 6:00 P.M.<br>Fiesta 8:00 P.M.<br>Vals 8:30 P.M.<br>Cena 9:30 P.M.<br>Mariachi 12:00 A.M.<br>Fin de la noche 12:30 A.M.</p>
-    </section>
+        <section class="schedule">
+            <h3>CRONOGRAMA</h3>
+            <p>Misa 6:00 P.M.<br>Fiesta 8:00 P.M.<br>Vals 8:30 P.M.<br>Cena 9:30 P.M.<br>Mariachi 12:00 A.M.<br>Fin de
+                la noche 12:30 A.M.</p>
+        </section>
 
-    <section class="notes">
-        <h3>NOTAS</h3>
-        <ul>
-            <li>Agradecemos de todo corazón tu asistencia tanto a la misa como a la fiesta, ya que tu lugar es especial para nosotros.</li>
-            <li>No usar vestidos color azul marino o parecidos.</li>
-        </ul>
-    </section>
-</div>
+        <section class="notes">
+            <h3>NOTAS</h3>
+            <ul>
+                <li>Agradecemos de todo corazón tu asistencia tanto a la misa como a la fiesta, ya que tu lugar es
+                    especial para nosotros.</li>
+                <li>No usar vestidos color azul marino o parecidos.</li>
+            </ul>
+
+            <button id="confirmButton" onclick="confirmarAsistencia()">Confirmar Asistencia</button>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

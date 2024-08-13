@@ -15,15 +15,16 @@ header, section {
 p {
   font-size: 16px;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  color: #333333;
+  font-weight: 100;
+  color: #4B4B4B;
   margin-bottom: 24px;
   line-height: 1.5;
+  font-style: italic;
 }
 
 .header {
   position: relative;
-  height: 862px;
+  height: 700px;
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -69,7 +70,7 @@ h3 {
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
-  color: #1a1a1a;
+  color: #B8860B;
   margin-bottom: 10px;
   letter-spacing: 10px;
 }
@@ -154,9 +155,10 @@ h3 {
 .notes li {
   font-size: 16px;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  color: #333333;
+  font-weight: 100;
+  color: #4B4B4B;
   margin-bottom: 10px;
+  font-style: italic;
 }
 
 @media (max-width: 600px) {
@@ -172,3 +174,28 @@ h3 {
     font-size: 18px;
   }
 }
+
+/* Estilo del botón */
+button {
+  background-color: #B8860B; /* Color rosado palo */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.8; /* Opacidad del 80% */
+  transition: opacity 0.3s ease;
+  margin-bottom: 25px;
+}
+
+button:hover {
+  opacity: 1; /* Aumenta la opacidad al pasar el cursor */
+}
+
+button:disabled {
+  background-color: #D3D3D3; /* Cambia el color cuando está deshabilitado */
+  cursor: not-allowed; /* Cambia el cursor cuando está deshabilitado */
+  opacity: 0.6; /* Reduce la opacidad cuando está deshabilitado */
+}
+

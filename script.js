@@ -1,6 +1,6 @@
 function confirmarAsistencia() {
     var mensaje = "Confirmo mi asistencia y la de mi familia!";
-    var numero = "523121076616"; // Tu número de teléfono con el código de país
+    var numero = "523123090826"; // Tu número de teléfono con el código de país
     var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
     
     // Abrir WhatsApp con el mensaje predefinido

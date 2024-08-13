@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #EAF5FF;
+  color: #5a5a5a;
+  overflow-x: hidden;
+}
+
+header, section {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  color: #333333;
+  margin-bottom: 24px; /* Margin between paragraphs */
+  line-height: 1.5;
+}
+
+.header {
+  position: relative;
+  height: 862px; /* Set height of header */
+  overflow: hidden;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 5%; /* Adjust bottom position to move links up */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.links a {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  letter-spacing: 10px;
+}
+
+.details, .schedule {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.event {
+  position: relative;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  width: 100%; /* Ensure the event container takes up 100% width */
+}
+
+.event-image {
+  width: 100%; /* Make sure the images take up 100% of the parent container */
+  height: 324px; /* Set height to 324px */
+  object-fit: cover; /* Ensure the images cover the area */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.event-text {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.event-text h3, .event-text p {
+  margin: 0;
+  color: #fff;
+}
+
+.event-text .time {
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+/* Text alignment for Misa */
+.event#fiesta .event-text {
+  top: 10px;
+  left: 10px;
+  right: auto;
+  width: auto;
+  text-align: left;
+}
+
+/* Text alignment for Fiesta */
+.event#misa .event-text {
+  top: 10px;
+  right: 10px;
+  left: auto;
+  width: auto;
+  text-align: right;
+}
+
+.visit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: 100px; /* Set width */
+  height: 34px; /* Set height */
+  background-color: rgba(255, 255, 255, 0.7); /* Set background color with opacity */
+  color: #333;
+  text-decoration: none;
+  border-radius: 50px; /* Set border-radius */
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  padding-right: 15px; /* Add padding-right to move text to the right */
+}
+
+/* Button alignment for Misa */
+.event#misa .visit-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Button alignment for Fiesta */
+.event#fiesta .visit-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.visit-button img {
+  width: 44px; /* Set width for the image */
+  height: 44px; /* Set height for the image */
+  margin-left: 44px; /* Space between text and image */
+  border-radius: 100%;
+}
+
+.visit-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.notes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes li {
+  font-size: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .text-overlay h2 {
+    font-size: 20px;
+  }
+
+  .text-overlay h1 {
+    font-size: 96px;
+  }
+
+  .event-text h3 {
+    font-size: 16px;
+  }
+
+  .event-text p {
+    font-size: 18px;
+  }
+
+  section p {
+    font-size: 18px;
+  }
+}

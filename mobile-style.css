@@ -1,0 +1,6 @@
+/* Estilos adicionales para el contenedor */
+.mobile-container {
+    max-width: 375px; /* Ancho típico de una pantalla móvil */
+    margin: 0 auto; /* Centrar el contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar */
+}

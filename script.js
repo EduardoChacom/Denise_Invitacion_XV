@@ -1,5 +1,5 @@
 function confirmarAsistencia() {
-    var mensaje = "Confirmo mi asistencia y la de mi familia!";
+    var mensaje = "Confirmo mi asistencia!";
     var numero = "523123090826"; // Tu número de teléfono con el código de país
     var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
     
